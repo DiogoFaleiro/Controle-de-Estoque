@@ -1,3 +1,5 @@
+Criando banco de dados
+
 CREATE DATABASE estoque
 CHARACTER SET utf8
 COLLATE utf8_general_ci;
@@ -27,6 +29,7 @@ CREATE TABLE movimentacao_produto(
         FOREIGN KEY(id_produto) REFERENCES produto(id) ON DELETE CASCADE ON UPDATE CASCADE
         
     );
+
 
 
 
