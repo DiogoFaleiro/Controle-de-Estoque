@@ -1,0 +1,32 @@
+CREATE DATABASE estoque
+CHARACTER SET utf8
+COLLATE utf8_general_ci;
+
+CREATE TABLE produto (
+    	id INT PRIMARY KEY AUTO_INCREMENT,
+        nome VARCHAR(50),
+        fabricante VARCHAR(30),
+        validade DATE,
+        estoque_atual INT
+    );
+
+CREATE TABLE movimentacao(
+    	id INT PRIMARY KEY AUTO_INCREMENT,
+        tipo VARCHAR(20),
+        data_hora DATETIME,
+        responsavel VARCHAR(30),
+        observacoes TEXT
+    );
+
+CREATE TABLE movimentacao_produto(
+    	id INT PRIMARY KEY AUTO_INCREMENT,
+        id_movimentacao INT,
+        id_produto INT,
+        qtd INT,
+        FOREIGN KEY(id_movimentacao) REFERENCES movimentacao(id) ON DELETE CASCADE ON UPDATE CASCADE,
+        FOREIGN KEY(id_produto) REFERENCES produto(id) ON DELETE CASCADE ON UPDATE CASCADE
+        
+    );
+
+
+
