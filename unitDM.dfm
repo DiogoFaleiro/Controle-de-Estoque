@@ -21,6 +21,33 @@ object DM: TDM
     TableName = 'estoque.produto'
     Left = 152
     Top = 40
+    object tbProdutoid: TFDAutoIncField
+      FieldName = 'id'
+      Origin = 'id'
+    end
+    object tbProdutonome: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'nome'
+      Origin = 'nome'
+      Size = 50
+    end
+    object tbProdutofabricante: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'fabricante'
+      Origin = 'fabricante'
+      Size = 30
+    end
+    object tbProdutovalidade: TDateField
+      AutoGenerateValue = arDefault
+      FieldName = 'validade'
+      Origin = 'validade'
+      EditMask = '##/##/####;1;_'
+    end
+    object tbProdutoestoque_atual: TIntegerField
+      AutoGenerateValue = arDefault
+      FieldName = 'estoque_atual'
+      Origin = 'estoque_atual'
+    end
   end
   object dsProduto: TDataSource
     DataSet = tbProduto
@@ -28,7 +55,6 @@ object DM: TDM
     Top = 112
   end
   object tbMovimentacoes: TFDTable
-    Active = True
     IndexFieldNames = 'id'
     Connection = Conexao
     UpdateOptions.UpdateTableName = 'estoque.movimentacao'
@@ -42,7 +68,6 @@ object DM: TDM
     Top = 112
   end
   object tbMovProduto: TFDTable
-    Active = True
     IndexFieldNames = 'id'
     Connection = Conexao
     UpdateOptions.UpdateTableName = 'estoque.movimentacao_produto'
@@ -80,7 +105,6 @@ object DM: TDM
     Top = 280
   end
   object sqlMovimentacoes: TFDQuery
-    Active = True
     Connection = Conexao
     SQL.Strings = (
       'select * from movimentacao')
