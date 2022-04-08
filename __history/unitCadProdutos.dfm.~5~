@@ -5,7 +5,7 @@ object formCadProdutos: TformCadProdutos
   BorderStyle = bsSingle
   Caption = 'Cadastro de Produtos'
   ClientHeight = 502
-  ClientWidth = 912
+  ClientWidth = 934
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -82,10 +82,10 @@ object formCadProdutos: TformCadProdutos
     ParentFont = False
   end
   object DBNavigator1: TDBNavigator
-    Left = 400
-    Top = 32
-    Width = 488
-    Height = 39
+    Left = 408
+    Top = 24
+    Width = 504
+    Height = 56
     DataSource = DM.dsProduto
     VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast, nbInsert, nbDelete, nbPost, nbCancel]
     TabOrder = 0
@@ -153,8 +153,8 @@ object formCadProdutos: TformCadProdutos
     TabOrder = 4
   end
   object DBGrid1: TDBGrid
-    Left = 447
-    Top = 136
+    Left = 464
+    Top = 144
     Width = 441
     Height = 337
     DataSource = DM.dsProduto
