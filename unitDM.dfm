@@ -24,6 +24,7 @@ object DM: TDM
     object tbProdutoid: TFDAutoIncField
       FieldName = 'id'
       Origin = 'id'
+      ReadOnly = True
     end
     object tbProdutonome: TStringField
       AutoGenerateValue = arDefault
@@ -55,6 +56,7 @@ object DM: TDM
     Top = 112
   end
   object tbMovimentacoes: TFDTable
+    Active = True
     IndexFieldNames = 'id'
     Connection = Conexao
     UpdateOptions.UpdateTableName = 'estoque.movimentacao'
@@ -68,6 +70,7 @@ object DM: TDM
     Top = 112
   end
   object tbMovProduto: TFDTable
+    Active = True
     IndexFieldNames = 'id'
     Connection = Conexao
     UpdateOptions.UpdateTableName = 'estoque.movimentacao_produto'

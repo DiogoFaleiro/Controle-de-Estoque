@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2022/03/23 11:25:02.902,=D:\OneDrive\DOCUMENTOS\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2022/03/23 11:25:42.765,D:\OneDrive\BKPDELL\DESKTOP\CURSOS\YOUTUBE\DELPHI\CONTROLE DE ESTOQUE\unitPrincipal.dfm=D:\OneDrive\DOCUMENTOS\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>2022/03/23 11:25:42.765,D:\OneDrive\BKPDELL\DESKTOP\CURSOS\YOUTUBE\DELPHI\CONTROLE DE ESTOQUE\unitPrincipal.pas=D:\OneDrive\DOCUMENTOS\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2022/03/23 11:27:54.531,=D:\OneDrive\DOCUMENTOS\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2022/03/23 11:28:30.123,D:\OneDrive\BKPDELL\DESKTOP\CURSOS\YOUTUBE\DELPHI\CONTROLE DE ESTOQUE\unitCadProdutos.dfm=D:\OneDrive\DOCUMENTOS\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>2022/03/23 11:28:30.123,D:\OneDrive\BKPDELL\DESKTOP\CURSOS\YOUTUBE\DELPHI\CONTROLE DE ESTOQUE\unitCadProdutos.pas=D:\OneDrive\DOCUMENTOS\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2022/03/23 11:28:47.583,=D:\OneDrive\DOCUMENTOS\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2022/03/23 11:29:39.636,=D:\OneDrive\DOCUMENTOS\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
-    <Transaction>2022/03/23 11:30:00.178,D:\OneDrive\BKPDELL\DESKTOP\CURSOS\YOUTUBE\DELPHI\CONTROLE DE ESTOQUE\unitCadMovimentacao.dfm=D:\OneDrive\DOCUMENTOS\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>2022/03/23 11:30:00.178,D:\OneDrive\BKPDELL\DESKTOP\CURSOS\YOUTUBE\DELPHI\CONTROLE DE ESTOQUE\unitCadMovimentacao.pas=D:\OneDrive\DOCUMENTOS\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2022/03/23 11:31:19.669,D:\OneDrive\BKPDELL\DESKTOP\CURSOS\YOUTUBE\DELPHI\CONTROLE DE ESTOQUE\unitConsMovimentacao.dfm=D:\OneDrive\DOCUMENTOS\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
-    <Transaction>2022/03/23 11:31:19.669,D:\OneDrive\BKPDELL\DESKTOP\CURSOS\YOUTUBE\DELPHI\CONTROLE DE ESTOQUE\unitConsMovimentacao.pas=D:\OneDrive\DOCUMENTOS\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
-    <Transaction>2022/03/23 11:32:00.938,=D:\OneDrive\DOCUMENTOS\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2022/03/23 11:32:31.041,D:\OneDrive\BKPDELL\DESKTOP\CURSOS\YOUTUBE\DELPHI\CONTROLE DE ESTOQUE\unitDM.dfm=D:\OneDrive\DOCUMENTOS\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>2022/03/23 11:32:31.041,D:\OneDrive\BKPDELL\DESKTOP\CURSOS\YOUTUBE\DELPHI\CONTROLE DE ESTOQUE\unitDM.pas=D:\OneDrive\DOCUMENTOS\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2022/03/23 17:41:44.652,D:\OneDrive\BKPDELL\DESKTOP\CURSOS\YOUTUBE\DELPHI\CONTROLE DE ESTOQUE\estoque.dproj=D:\OneDrive\DOCUMENTOS\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+	<Transactions>
+    <Transaction>2022/03/23 11:25:02.000.902,=D:\OneDrive\DOCUMENTOS\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/03/23 11:25:42.000.765,D:\OneDrive\BKPDELL\DESKTOP\CURSOS\YOUTUBE\DELPHI\CONTROLE DE ESTOQUE\unitPrincipal.dfm=D:\OneDrive\DOCUMENTOS\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/03/23 11:25:42.000.765,D:\OneDrive\BKPDELL\DESKTOP\CURSOS\YOUTUBE\DELPHI\CONTROLE DE ESTOQUE\unitPrincipal.pas=D:\OneDrive\DOCUMENTOS\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/03/23 11:27:54.000.531,=D:\OneDrive\DOCUMENTOS\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/03/23 11:28:30.000.123,D:\OneDrive\BKPDELL\DESKTOP\CURSOS\YOUTUBE\DELPHI\CONTROLE DE ESTOQUE\unitCadProdutos.dfm=D:\OneDrive\DOCUMENTOS\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/03/23 11:28:30.000.123,D:\OneDrive\BKPDELL\DESKTOP\CURSOS\YOUTUBE\DELPHI\CONTROLE DE ESTOQUE\unitCadProdutos.pas=D:\OneDrive\DOCUMENTOS\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/03/23 11:28:47.000.583,=D:\OneDrive\DOCUMENTOS\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/03/23 11:29:39.000.636,=D:\OneDrive\DOCUMENTOS\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2022/03/23 11:30:00.000.178,D:\OneDrive\BKPDELL\DESKTOP\CURSOS\YOUTUBE\DELPHI\CONTROLE DE ESTOQUE\unitCadMovimentacao.dfm=D:\OneDrive\DOCUMENTOS\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/03/23 11:30:00.000.178,D:\OneDrive\BKPDELL\DESKTOP\CURSOS\YOUTUBE\DELPHI\CONTROLE DE ESTOQUE\unitCadMovimentacao.pas=D:\OneDrive\DOCUMENTOS\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/03/23 11:31:19.000.669,D:\OneDrive\BKPDELL\DESKTOP\CURSOS\YOUTUBE\DELPHI\CONTROLE DE ESTOQUE\unitConsMovimentacao.dfm=D:\OneDrive\DOCUMENTOS\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>2022/03/23 11:31:19.000.669,D:\OneDrive\BKPDELL\DESKTOP\CURSOS\YOUTUBE\DELPHI\CONTROLE DE ESTOQUE\unitConsMovimentacao.pas=D:\OneDrive\DOCUMENTOS\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2022/03/23 11:32:00.000.938,=D:\OneDrive\DOCUMENTOS\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/03/23 11:32:31.000.041,D:\OneDrive\BKPDELL\DESKTOP\CURSOS\YOUTUBE\DELPHI\CONTROLE DE ESTOQUE\unitDM.dfm=D:\OneDrive\DOCUMENTOS\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/03/23 11:32:31.000.041,D:\OneDrive\BKPDELL\DESKTOP\CURSOS\YOUTUBE\DELPHI\CONTROLE DE ESTOQUE\unitDM.pas=D:\OneDrive\DOCUMENTOS\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/03/23 17:41:44.000.652,D:\OneDrive\BKPDELL\DESKTOP\CURSOS\YOUTUBE\DELPHI\CONTROLE DE ESTOQUE\estoque.dproj=D:\OneDrive\DOCUMENTOS\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
   </Transactions>
 </BorlandProject>
