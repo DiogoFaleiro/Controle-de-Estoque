@@ -1,7 +1,7 @@
 object DM: TDM
-  OldCreateOrder = False
-  Height = 398
-  Width = 520
+  Height = 415
+  Width = 551
+  PixelsPerInch = 96
   object Conexao: TFDConnection
     Params.Strings = (
       'Database=estoque'

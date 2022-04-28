@@ -12,7 +12,6 @@ object formCadProdutos: TformCadProdutos
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
-  OldCreateOrder = False
   Position = poScreenCenter
   PixelsPerInch = 96
   TextHeight = 13
@@ -30,7 +29,7 @@ object formCadProdutos: TformCadProdutos
     ParentFont = False
   end
   object Label2: TLabel
-    Left = 72
+    Left = 40
     Top = 125
     Width = 126
     Height = 19
@@ -43,7 +42,7 @@ object formCadProdutos: TformCadProdutos
     ParentFont = False
   end
   object Label3: TLabel
-    Left = 72
+    Left = 40
     Top = 202
     Width = 72
     Height = 19
@@ -56,7 +55,7 @@ object formCadProdutos: TformCadProdutos
     ParentFont = False
   end
   object Label4: TLabel
-    Left = 263
+    Left = 231
     Top = 202
     Width = 60
     Height = 19
@@ -69,7 +68,7 @@ object formCadProdutos: TformCadProdutos
     ParentFont = False
   end
   object Label5: TLabel
-    Left = 72
+    Left = 40
     Top = 277
     Width = 169
     Height = 19
@@ -83,7 +82,7 @@ object formCadProdutos: TformCadProdutos
   end
   object DBNavigator1: TDBNavigator
     Left = 400
-    Top = 32
+    Top = 24
     Width = 488
     Height = 39
     DataSource = DM.dsProduto
@@ -91,7 +90,7 @@ object formCadProdutos: TformCadProdutos
     TabOrder = 0
   end
   object DBEdit1: TDBEdit
-    Left = 72
+    Left = 40
     Top = 150
     Width = 289
     Height = 27
@@ -106,7 +105,7 @@ object formCadProdutos: TformCadProdutos
     TabOrder = 1
   end
   object DBEdit2: TDBEdit
-    Left = 72
+    Left = 40
     Top = 227
     Width = 185
     Height = 27
@@ -121,7 +120,7 @@ object formCadProdutos: TformCadProdutos
     TabOrder = 2
   end
   object DBEdit3: TDBEdit
-    Left = 263
+    Left = 231
     Top = 227
     Width = 98
     Height = 27
@@ -137,7 +136,7 @@ object formCadProdutos: TformCadProdutos
     TabOrder = 3
   end
   object DBEdit4: TDBEdit
-    Left = 72
+    Left = 40
     Top = 302
     Width = 167
     Height = 27
@@ -153,9 +152,9 @@ object formCadProdutos: TformCadProdutos
     TabOrder = 4
   end
   object DBGrid1: TDBGrid
-    Left = 447
+    Left = 400
     Top = 136
-    Width = 441
+    Width = 488
     Height = 337
     DataSource = DM.dsProduto
     TabOrder = 5

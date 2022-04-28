@@ -20,6 +20,16 @@ type
     Label5: TLabel;
     DBNavigator1: TDBNavigator;
     DBGrid1: TDBGrid;
+    Label6: TLabel;
+    DBNavigator2: TDBNavigator;
+    Bevel1: TBevel;
+    Bevel2: TBevel;
+    DBLookupComboBox1: TDBLookupComboBox;
+    DBEdit3: TDBEdit;
+    Label7: TLabel;
+    Label8: TLabel;
+    Label9: TLabel;
+    DBGrid2: TDBGrid;
     procedure DBNavigator1Click(Sender: TObject; Button: TNavigateBtn);
   private
     { Private declarations }

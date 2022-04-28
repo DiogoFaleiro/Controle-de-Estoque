@@ -4,34 +4,45 @@ object formCadMovimentacao: TformCadMovimentacao
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
   Caption = 'Cadastro de Movimenta'#231#227'o'
-  ClientHeight = 524
-  ClientWidth = 953
+  ClientHeight = 525
+  ClientWidth = 1206
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
-  OldCreateOrder = False
   Position = poScreenCenter
   PixelsPerInch = 96
   TextHeight = 13
+  object Bevel2: TBevel
+    Left = 775
+    Top = 76
+    Width = 425
+    Height = 422
+  end
+  object Bevel1: TBevel
+    Left = -3
+    Top = -8
+    Width = 1220
+    Height = 78
+  end
   object Label1: TLabel
-    Left = 48
-    Top = 32
-    Width = 379
-    Height = 35
-    Caption = 'Gerenciar Movimenta'#231#245'es'
+    Left = 24
+    Top = 20
+    Width = 327
+    Height = 29
+    Caption = 'Movimenta'#231#245'es no Estoque'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
-    Font.Height = -29
+    Font.Height = -24
     Font.Name = 'Tahoma'
     Font.Style = [fsBold]
     ParentFont = False
   end
   object Label2: TLabel
-    Left = 48
-    Top = 145
+    Left = 24
+    Top = 105
     Width = 160
     Height = 19
     Caption = 'Tipo da Movimenta'#231#227'o'
@@ -43,8 +54,8 @@ object formCadMovimentacao: TformCadMovimentacao
     ParentFont = False
   end
   object Label3: TLabel
-    Left = 48
-    Top = 263
+    Left = 24
+    Top = 223
     Width = 84
     Height = 19
     Caption = 'Data e Hora'
@@ -56,8 +67,8 @@ object formCadMovimentacao: TformCadMovimentacao
     ParentFont = False
   end
   object Label4: TLabel
-    Left = 48
-    Top = 209
+    Left = 24
+    Top = 169
     Width = 87
     Height = 19
     Caption = 'Respons'#225'vel'
@@ -69,8 +80,8 @@ object formCadMovimentacao: TformCadMovimentacao
     ParentFont = False
   end
   object Label5: TLabel
-    Left = 48
-    Top = 317
+    Left = 24
+    Top = 277
     Width = 89
     Height = 19
     Caption = 'Observa'#231#245'es'
@@ -81,9 +92,61 @@ object formCadMovimentacao: TformCadMovimentacao
     Font.Style = []
     ParentFont = False
   end
+  object Label6: TLabel
+    Left = 792
+    Top = 105
+    Width = 221
+    Height = 19
+    Caption = 'Produtos da Movimenta'#231#227'o'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label7: TLabel
+    Left = 792
+    Top = 464
+    Width = 209
+    Height = 19
+    Caption = 'Total de Produtos'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label8: TLabel
+    Left = 1028
+    Top = 152
+    Width = 65
+    Height = 13
+    Caption = 'Quantidade'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label9: TLabel
+    Left = 792
+    Top = 152
+    Width = 100
+    Height = 13
+    Caption = 'Escolha o produto'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
   object DBComboBox1: TDBComboBox
-    Left = 48
-    Top = 168
+    Left = 24
+    Top = 128
     Width = 321
     Height = 27
     Style = csDropDownList
@@ -101,8 +164,8 @@ object formCadMovimentacao: TformCadMovimentacao
     TabOrder = 0
   end
   object DBEdit1: TDBEdit
-    Left = 48
-    Top = 284
+    Left = 24
+    Top = 244
     Width = 185
     Height = 27
     DataField = 'data_hora'
@@ -116,8 +179,8 @@ object formCadMovimentacao: TformCadMovimentacao
     TabOrder = 1
   end
   object DBEdit2: TDBEdit
-    Left = 48
-    Top = 231
+    Left = 24
+    Top = 191
     Width = 185
     Height = 27
     DataField = 'responsavel'
@@ -131,10 +194,10 @@ object formCadMovimentacao: TformCadMovimentacao
     TabOrder = 2
   end
   object DBMemo1: TDBMemo
-    Left = 48
-    Top = 342
+    Left = 24
+    Top = 302
     Width = 321
-    Height = 147
+    Height = 196
     DataField = 'observacoes'
     DataSource = DM.dsMovimentacoes
     Font.Charset = DEFAULT_CHARSET
@@ -146,9 +209,9 @@ object formCadMovimentacao: TformCadMovimentacao
     TabOrder = 3
   end
   object DBNavigator1: TDBNavigator
-    Left = 48
-    Top = 84
-    Width = 392
+    Left = 366
+    Top = 17
+    Width = 384
     Height = 45
     DataSource = DM.dsMovimentacoes
     VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast, nbInsert, nbDelete, nbPost, nbCancel]
@@ -156,10 +219,10 @@ object formCadMovimentacao: TformCadMovimentacao
     OnClick = DBNavigator1Click
   end
   object DBGrid1: TDBGrid
-    Left = 480
-    Top = 168
-    Width = 441
-    Height = 321
+    Left = 366
+    Top = 128
+    Width = 385
+    Height = 370
     DataSource = DM.dsMovimentacoes
     TabOrder = 5
     TitleFont.Charset = DEFAULT_CHARSET
@@ -171,11 +234,6 @@ object formCadMovimentacao: TformCadMovimentacao
       item
         Expanded = False
         FieldName = 'tipo'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
         Title.Caption = 'Tipo'
         Title.Font.Charset = DEFAULT_CHARSET
         Title.Font.Color = clWindowText
@@ -187,27 +245,18 @@ object formCadMovimentacao: TformCadMovimentacao
       item
         Expanded = False
         FieldName = 'data_hora'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
         Title.Caption = 'Data e Hora'
         Title.Font.Charset = DEFAULT_CHARSET
         Title.Font.Color = clWindowText
         Title.Font.Height = -13
         Title.Font.Name = 'Tahoma'
         Title.Font.Style = [fsBold]
+        Width = 113
         Visible = True
       end
       item
         Expanded = False
         FieldName = 'responsavel'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
         Title.Caption = 'Respons'#225'vel'
         Title.Font.Charset = DEFAULT_CHARSET
         Title.Font.Color = clWindowText
@@ -216,5 +265,39 @@ object formCadMovimentacao: TformCadMovimentacao
         Title.Font.Style = [fsBold]
         Visible = True
       end>
+  end
+  object DBNavigator2: TDBNavigator
+    Left = 1028
+    Top = 102
+    Width = 148
+    Height = 29
+    VisibleButtons = [nbInsert, nbDelete, nbPost, nbCancel]
+    TabOrder = 6
+  end
+  object DBLookupComboBox1: TDBLookupComboBox
+    Left = 792
+    Top = 167
+    Width = 221
+    Height = 21
+    TabOrder = 7
+  end
+  object DBEdit3: TDBEdit
+    Left = 1028
+    Top = 167
+    Width = 148
+    Height = 21
+    TabOrder = 8
+  end
+  object DBGrid2: TDBGrid
+    Left = 792
+    Top = 225
+    Width = 392
+    Height = 227
+    TabOrder = 9
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
   end
 end

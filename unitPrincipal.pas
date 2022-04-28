@@ -4,7 +4,8 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Vcl.ExtCtrls,
+  System.ImageList, Vcl.ImgList, Vcl.DBCtrls, Vcl.Imaging.jpeg, Vcl.StdCtrls;
 
 type
   TformPrincipal = class(TForm)
@@ -16,6 +17,10 @@ type
     Movimentaes1: TMenuItem;
     GerenciarMovimentaes1: TMenuItem;
     ConsultarMovimentaes1: TMenuItem;
+    Image1: TImage;
+    Panel1: TPanel;
+    Label1: TLabel;
+    Label2: TLabel;
     procedure Sair1Click(Sender: TObject);
     procedure CadastrodeProdutos1Click(Sender: TObject);
     procedure GerenciarMovimentaes1Click(Sender: TObject);
