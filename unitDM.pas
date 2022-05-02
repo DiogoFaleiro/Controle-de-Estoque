@@ -28,6 +28,15 @@ type
     tbProdutofabricante: TStringField;
     tbProdutovalidade: TDateField;
     tbProdutoestoque_atual: TIntegerField;
+    tbMovProdutoid: TFDAutoIncField;
+    tbMovProdutoid_movimentacao: TIntegerField;
+    tbMovProdutoid_produto: TIntegerField;
+    tbMovProdutoqtd: TIntegerField;
+    tbMovProdutonomeProduto: TStringField;
+    procedure tbMovProdutoAfterPost(DataSet: TDataSet);
+    procedure tbMovProdutoAfterDelete(DataSet: TDataSet);
+    procedure calcularTotais;
+    procedure tbMovimentacoesAfterScroll(DataSet: TDataSet);
   private
     { Private declarations }
   public
@@ -41,6 +50,47 @@ implementation
 
 {%CLASSGROUP 'Vcl.Controls.TControl'}
 
+uses unitCadMovimentacao;
+
 {$R *.dfm}
+
+procedure TDM.calcularTotais;
+var
+  totais : Integer;
+begin
+  if tbMovProduto.State in [dsBrowse] then
+    begin
+
+        tbMovProduto.First;
+
+        while not tbMovProduto.Eof do
+          begin
+            totais := totais + tbMovProduto.FieldByName('qtd').Value;
+
+            tbMovProduto.Next;
+          end;
+
+          formCadMovimentacao.txtTotalProdutos.Caption := IntToStr(totais);
+    end;
+end;
+
+procedure TDM.tbMovimentacoesAfterScroll(DataSet: TDataSet);
+begin
+  calcularTotais;
+end;
+
+procedure TDM.tbMovProdutoAfterDelete(DataSet: TDataSet);
+begin
+
+  calcularTotais;
+
+end;
+
+procedure TDM.tbMovProdutoAfterPost(DataSet: TDataSet);
+begin
+
+   calcularTotais;
+
+end;
 
 end.
