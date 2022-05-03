@@ -73,6 +73,7 @@ object DM: TDM
   object tbMovProduto: TFDTable
     Active = True
     AfterPost = tbMovProdutoAfterPost
+    BeforeDelete = tbMovProdutoBeforeDelete
     AfterDelete = tbMovProdutoAfterDelete
     IndexName = 'id_movimentacao'
     MasterSource = dsMovimentacoes
@@ -85,6 +86,7 @@ object DM: TDM
     object tbMovProdutoid: TFDAutoIncField
       FieldName = 'id'
       Origin = 'id'
+      ReadOnly = True
     end
     object tbMovProdutoid_movimentacao: TIntegerField
       AutoGenerateValue = arDefault
@@ -119,24 +121,37 @@ object DM: TDM
   end
   object sqlAumentaEstoque: TFDCommand
     Connection = Conexao
+    CommandText.Strings = (
+      
+        'update produto set estoque_atual = estoque_atual + :pQtd Where i' +
+        'd = :pId')
     ParamData = <
       item
-        Name = 'pId'
+        Name = 'pQtd'
+        ParamType = ptInput
       end
       item
-        Name = 'pQtd'
+        Name = 'pId'
+        ParamType = ptInput
       end>
     Left = 240
     Top = 200
   end
   object sqlDiminueEstoque: TFDCommand
     Connection = Conexao
+    CommandText.Strings = (
+      
+        'update produto set estoque_atual = estoque_atual - :pQtd Where i' +
+        'd = :pId'
+      '')
     ParamData = <
       item
-        Name = 'pId'
+        Name = 'pQtd'
+        ParamType = ptInput
       end
       item
-        Name = 'pQtd'
+        Name = 'pId'
+        ParamType = ptInput
       end>
     Left = 240
     Top = 280

@@ -1,0 +1,96 @@
+unit unitDM;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, FireDAC.Stan.Intf, FireDAC.Stan.Option,
+  FireDAC.Stan.Error, FireDAC.UI.Intf, FireDAC.Phys.Intf, FireDAC.Stan.Def,
+  FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys, FireDAC.Phys.MySQL,
+  FireDAC.Phys.MySQLDef, FireDAC.VCLUI.Wait, FireDAC.Stan.Param, FireDAC.DatS,
+  FireDAC.DApt.Intf, FireDAC.DApt, FireDAC.Comp.Client, Data.DB,
+  FireDAC.Comp.DataSet;
+
+type
+  TDM = class(TDataModule)
+    Conexao: TFDConnection;
+    tbProduto: TFDTable;
+    dsProduto: TDataSource;
+    tbMovimentacoes: TFDTable;
+    dsMovimentacoes: TDataSource;
+    tbMovProduto: TFDTable;
+    dsMovProdutos: TDataSource;
+    sqlAumentaEstoque: TFDCommand;
+    sqlDiminueEstoque: TFDCommand;
+    sqlMovimentacoes: TFDQuery;
+    dsSqlMovimentacoes: TDataSource;
+    tbProdutoid: TFDAutoIncField;
+    tbProdutonome: TStringField;
+    tbProdutofabricante: TStringField;
+    tbProdutovalidade: TDateField;
+    tbProdutoestoque_atual: TIntegerField;
+    tbMovProdutoid: TFDAutoIncField;
+    tbMovProdutoid_movimentacao: TIntegerField;
+    tbMovProdutoid_produto: TIntegerField;
+    tbMovProdutoqtd: TIntegerField;
+    tbMovProdutonomeProduto: TStringField;
+    procedure tbMovProdutoAfterPost(DataSet: TDataSet);
+    procedure tbMovProdutoAfterDelete(DataSet: TDataSet);
+    procedure calcularTotais;
+    procedure tbMovimentacoesAfterScroll(DataSet: TDataSet);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  DM: TDM;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+uses unitCadMovimentacao;
+
+{$R *.dfm}
+
+procedure TDM.calcularTotais;
+var
+  totais : Integer;
+begin
+  if tbMovProduto.State in [dsBrowse] then
+    begin
+
+        tbMovProduto.First;
+
+        while not tbMovProduto.Eof do
+          begin
+            totais := totais + tbMovProduto.FieldByName('qtd').Value;
+
+            tbMovProduto.Next;
+          end;
+
+          formCadMovimentacao.txtTotalProdutos.Caption := IntToStr(totais);
+    end;
+end;
+
+procedure TDM.tbMovimentacoesAfterScroll(DataSet: TDataSet);
+begin
+  calcularTotais;
+end;
+
+procedure TDM.tbMovProdutoAfterDelete(DataSet: TDataSet);
+begin
+
+  calcularTotais;
+
+end;
+
+procedure TDM.tbMovProdutoAfterPost(DataSet: TDataSet);
+begin
+
+   calcularTotais;
+
+end;
+
+end.

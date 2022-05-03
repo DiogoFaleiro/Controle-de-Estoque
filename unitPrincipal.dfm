@@ -3516,8 +3516,9 @@ object formPrincipal: TformPrincipal
     Width = 861
     Height = 26
     Align = alBottom
+    Color = clWhite
+    ParentBackground = False
     TabOrder = 0
-    ExplicitTop = 551
     object Label1: TLabel
       Left = 8
       Top = 6
@@ -3528,7 +3529,7 @@ object formPrincipal: TformPrincipal
     object Label2: TLabel
       Left = 107
       Top = 6
-      Width = 120
+      Width = 98
       Height = 13
       Caption = 'vers'#227'o 1.0  04/2022'
     end

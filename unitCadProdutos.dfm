@@ -13,6 +13,7 @@ object formCadProdutos: TformCadProdutos
   Font.Name = 'Tahoma'
   Font.Style = []
   Position = poScreenCenter
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
@@ -69,10 +70,10 @@ object formCadProdutos: TformCadProdutos
   end
   object Label5: TLabel
     Left = 40
-    Top = 277
-    Width = 169
+    Top = 293
+    Width = 165
     Height = 19
-    Caption = 'Quantidade em Estoque'
+    Caption = 'Quantidade no Estoque'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
@@ -137,8 +138,8 @@ object formCadProdutos: TformCadProdutos
   end
   object DBEdit4: TDBEdit
     Left = 40
-    Top = 302
-    Width = 167
+    Top = 318
+    Width = 165
     Height = 27
     DataField = 'estoque_atual'
     DataSource = DM.dsProduto
