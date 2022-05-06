@@ -73,13 +73,11 @@ object DM: TDM
   object tbMovProduto: TFDTable
     Active = True
     AfterPost = tbMovProdutoAfterPost
-    BeforeDelete = tbMovProdutoBeforeDelete
     AfterDelete = tbMovProdutoAfterDelete
-    IndexName = 'id_movimentacao'
+    IndexFieldNames = 'id'
     MasterSource = dsMovimentacoes
     MasterFields = 'id'
     Connection = Conexao
-    UpdateOptions.UpdateTableName = 'estoque.movimentacao_produto'
     TableName = 'estoque.movimentacao_produto'
     Left = 344
     Top = 40
@@ -114,7 +112,7 @@ object DM: TDM
       Lookup = True
     end
   end
-  object dsMovProdutos: TDataSource
+  object dsMovProduto: TDataSource
     DataSet = tbMovProduto
     Left = 344
     Top = 112
@@ -128,7 +126,9 @@ object DM: TDM
     ParamData = <
       item
         Name = 'pQtd'
+        DataType = ftInteger
         ParamType = ptInput
+        Value = Null
       end
       item
         Name = 'pId'
@@ -157,6 +157,7 @@ object DM: TDM
     Top = 280
   end
   object sqlMovimentacoes: TFDQuery
+    Active = True
     Connection = Conexao
     SQL.Strings = (
       'select * from movimentacao')
