@@ -109,7 +109,7 @@ object formCadMovimentacao: TformCadMovimentacao
   object Label7: TLabel
     Left = 792
     Top = 464
-    Width = 145
+    Width = 146
     Height = 19
     Caption = 'Total de Produtos'
     Font.Charset = DEFAULT_CHARSET
@@ -285,7 +285,7 @@ object formCadMovimentacao: TformCadMovimentacao
     Top = 102
     Width = 148
     Height = 29
-    DataSource = DM.dsMovProdutos
+    DataSource = DM.dsMovProduto
     VisibleButtons = [nbInsert, nbDelete, nbPost, nbCancel]
     TabOrder = 6
   end
@@ -295,7 +295,7 @@ object formCadMovimentacao: TformCadMovimentacao
     Width = 221
     Height = 21
     DataField = 'id_produto'
-    DataSource = DM.dsMovProdutos
+    DataSource = DM.dsMovProduto
     KeyField = 'id'
     ListField = 'nome'
     ListSource = DM.dsProduto
@@ -307,7 +307,7 @@ object formCadMovimentacao: TformCadMovimentacao
     Width = 148
     Height = 21
     DataField = 'qtd'
-    DataSource = DM.dsMovProdutos
+    DataSource = DM.dsMovProduto
     TabOrder = 8
   end
   object DBGrid2: TDBGrid
@@ -315,7 +315,7 @@ object formCadMovimentacao: TformCadMovimentacao
     Top = 225
     Width = 392
     Height = 227
-    DataSource = DM.dsMovProdutos
+    DataSource = DM.dsMovProduto
     TabOrder = 9
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText

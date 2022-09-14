@@ -128,11 +128,13 @@ object DM: TDM
         Name = 'pQtd'
         DataType = ftInteger
         ParamType = ptInput
-        Value = Null
+        Value = 0
       end
       item
         Name = 'pId'
+        DataType = ftInteger
         ParamType = ptInput
+        Value = 0
       end>
     Left = 240
     Top = 200
@@ -147,11 +149,15 @@ object DM: TDM
     ParamData = <
       item
         Name = 'pQtd'
+        DataType = ftInteger
         ParamType = ptInput
+        Value = 0
       end
       item
         Name = 'pId'
+        DataType = ftInteger
         ParamType = ptInput
+        Value = 0
       end>
     Left = 240
     Top = 280
